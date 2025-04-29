@@ -96,7 +96,7 @@
     .news-box {
         flex-direction: column;
         width: 100%;
-        height: max-content;
+        height: 580px;
     }
     
     .news-box::after {
@@ -114,6 +114,10 @@
         right: 0;
         background-color: var(--green);
         clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    }
+
+    .short-desc {
+        height: 70px;
     }
     
     .game-logo {
@@ -299,6 +303,10 @@
 
     .monthly-pick-text h1{
         font-size: 2rem;
+    }
+
+    .news-box {
+        height: 450px;
     }
     
     .news-box::after {
