@@ -1,0 +1,164 @@
+
+@media screen and (max-width: 768px){
+
+    .section-title {
+        padding: 3rem;
+    }
+
+    /* navbar tablet (start) */
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        transition: .3s;
+    }
+
+    nav.open .hamburger span:first-child {
+        rotate: 45deg;
+        transform-origin: left center;
+    }
+    
+    nav.open .hamburger span:nth-child(2) {
+       opacity: 0;
+    }
+
+    nav.open .hamburger span:last-child {
+        rotate: -45deg;
+        transform-origin: left center;
+    }
+
+    .navigation {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        background: linear-gradient(-90deg, var(--darkblue) 10%, var(--lighterblue) 100%);
+        height: 100vh;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: start;
+        gap: 4rem;
+        translate: 100%;
+        transition: .3s;
+        padding: 5rem 3rem;
+    }
+    
+    nav.open .navigation {
+        translate: 0;
+    }
+
+    nav.open::before {
+        content: '';
+        z-index: -1;
+        position: fixed;
+        width: 100vh;
+        height: 100vh;
+        background-color: var(--darkblue);
+        opacity: 0.5;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        margin: initial;
+        font-size: 1.5rem;
+        gap: 3rem;
+        text-align: left;
+        text-transform: uppercase;
+        font-family: 'dmsans-bold';
+    }
+
+    .nav-list a li:hover {
+        color: var(--green);
+    }
+
+    nav .navigation a:has(.white-button), .white-button {
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: 'dmsans-bold';
+    }
+
+    .navigation .white-button:hover{
+        background: linear-gradient(45deg, var(--green) 0%, var(--purple) 100%);
+        text-shadow: 0px 2px 10px var(--darkblue);
+    }
+    /* navbar tablet (end) */
+
+    /* footer tablet (start) */
+    .download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: linear-gradient(90deg, var(--green) 0%, var(--purple) 100%);
+        height: 55px;
+        width: 100%;
+    }
+    
+    .download h1 {
+        font-family: 'dmsans-bold';
+        font-size: 1.3rem;
+        color: var(--white);
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    
+    .game-rate {
+        display: flex;
+        height: 135px;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2.5rem;
+        gap: 16px;
+        border-radius: 24px 0px;
+        background-color: var(--purple);
+        background: linear-gradient(45deg, var(--purple) 25%, var(--green) 100%);
+    }
+
+    .icon-footer {
+        height: 20px;
+    }
+
+    footer .container {
+        gap: 2rem;
+    }
+    
+    .logo-box {
+        gap: 1rem;
+        width: 75%;
+    }
+    
+    .logo-box img {
+        width: 40%;
+        height: 20px;
+    }
+    
+    .text-footer {
+        text-align: right;
+        padding: 12px 0px;
+        font-size: 0.65rem;
+    }
+
+    .logo-text-box {
+        padding: 1rem 3rem;
+    }
+    
+    /* footer tablet (end) */
+}
+
+@media screen and (max-width: 428px){
+    .logo-text-box {
+        padding: 1rem 2rem;
+    }
+
+    .text-footer {
+        width: 80%;
+    }
+
+}
+

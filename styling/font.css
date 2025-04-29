@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'babapro';
+    src: url("font/BABAPRO/BabaPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'dmsans-reg';
+    src: url("font/DMSans/DMSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'dmsans-bold';
+    src: url("font/DMSans/DMSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'dmsans-semibold';
+    src: url("font/DMSans/DMSans-SemiBold.ttf");
+}

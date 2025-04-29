@@ -1,0 +1,360 @@
+@media screen and (max-width: 920px){
+    /* best agent */
+
+    .agent-name-box {
+        width: 100%;
+    }
+
+    .agent-slogan {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    /* cover */
+    .game-title {
+        font-size: 6.5rem;
+    }
+    /* cover (end) */
+
+    /* best agent */
+
+    #best-agent {
+        padding-top: 150px;
+    }
+    
+    .content {
+        display: none;
+    }
+
+
+    .content-responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .agent-full-img {
+        object-fit: contain;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    /* about */        
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        margin: 100px 0px;
+    }
+
+    .about-title {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .text-box p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .text-box {
+        width: 100%;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .about-video {
+        order: -1;
+        width: 100%;
+    }
+
+    /* lastest info */
+    
+    #last-info .container {
+        align-items: center;
+    }
+
+    .info-header-box {
+        height: 80px;
+    }
+    
+    .info-header-box::after {
+        height: 60px;
+    }
+    
+    .info-header {
+        height: 60px;
+    }
+
+    .final-news-slide {
+        width: 90%;
+    }
+    
+    .news-box {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+    
+    .news-box::after {
+        background: linear-gradient(0deg, var(--darkblue) 50%, transparent 90%);
+    }
+    
+    .news-box::before {
+        content: '';
+        z-index: 20;
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 3rem;
+        bottom: 0;
+        right: 0;
+        background-color: var(--green);
+        clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    }
+    
+    .game-logo {
+        position: absolute;
+        width: 20px;
+        left: 30px;
+        top: 30px;
+        opacity: 0.9;
+    }
+    
+    .desc-box {
+        display: flex;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background-color: var(--darkblue);
+        padding: 0rem 3rem 3rem 3rem;
+        /* background: linear-gradient(-90deg, var(--darkblue) 60%, var(--darkblueTrans) 100%); */
+    }
+    
+    .buttonPrev, .buttonNext {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+
+    .more-news-info {
+        position: relative;
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .more-news-info .white-button {
+        font-size: 1rem;
+    }
+
+    .more-news-info {
+        gap: 1rem;
+    }
+
+   /* agent-map */
+
+    .agent-box:hover .agent-text-box h1, .map-box:hover .map-text-box h1 {
+        text-align: right;
+        font-size: 3.15rem;
+        transition: 0.3s;
+    }
+
+    .agent-img-overlay, .map-img-overlay {
+        height: 200px;
+    }
+
+    .agent-text-box h1 , .map-text-box h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 428px){
+    /* cover */
+    .game-title {
+        font-size: 4rem;
+    }
+
+    #hero-cover {
+        height: 460px;
+    }
+    /* cover (end) */
+
+    /* best agent */
+
+    #best-agent {
+        padding-top: 50px;
+    }
+
+    #best-agent .container .monthly-pick-text, #best-agent .container .best-agent-text{
+        font-size: 2.5rem;
+    }
+
+    .agent-info-box {
+        position: relative;
+        width: 100%;
+        max-height: fit-content;
+        padding: 10px;
+        /* flex-direction: row; */
+    }
+
+    .agent-name-box {
+        padding: 0.5rem; 
+        border-radius: 0px 1rem;
+    }
+
+    .agent-info-box::after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: var(--purple);
+        bottom: 0;
+        right: 0;
+    }
+
+    .agent-info-box::before {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: var(--purple);
+        bottom: 3px;
+        right: 25px;
+    }
+
+    .agent-name-box .best-agent-name{
+        font-size: 3rem;
+    }
+
+    .content-responsive .info-design {
+        gap: 1rem;
+    }
+
+    .agent-full-img {
+        width: 90%;
+    }
+
+    .agent-slogan {
+        display: none;
+    }
+
+    .agent-info-box .best-agent-profile {
+        display: none;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .content-responsive {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .agent-full-img {
+        object-fit: contain;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    /* about */        
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin: 80px 0px;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    .text-box {
+        gap: 1rem;
+    }
+
+    .about-video {
+        order: -1;
+        width: 100%;
+    }
+
+    /* lastest info */
+    
+    #last-info .container {
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .info-design {
+        flex-direction: column;
+        padding: 2rem 2rem 0px 2rem;
+        border-radius: 3rem 0px;
+    }
+
+    .monthly-pick-text h1{
+        font-size: 2rem;
+    }
+    
+    .news-box::after {
+        background: linear-gradient(0deg, var(--darkblue) 60%, transparent 90%);
+    }
+    
+    
+    .game-logo {
+        position: absolute;
+        width: 15px;
+        left: 30px;
+        top: 30px;
+        opacity: 0.9;
+    }
+    
+    .desc-box {
+        padding: 0rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    .desc-box .text-desc h1 {
+        font-size: 1.7rem;
+    }
+
+    .desc-box .text-desc .news-type, .desc-box .text-desc .short-desc, .desc-box .text-desc .news-date {
+        font-size: 0.8rem;
+    }
+
+   /* agent-map */
+    #agent-map .container{
+        padding: 9rem 2.5rem;
+    }
+
+    .agent-box:hover .agent-text-box h1, .map-box:hover .map-text-box h1 {
+        text-align: right;
+        font-size: 2.35rem;
+        transition: 0.3s;
+    }
+
+    .agent-img-overlay, .map-img-overlay {
+        height: 200px;
+    }
+
+    .agent-text-box a .white-button, .map-text-box a .white-button {
+        font-size: 1rem;
+    }
+
+    .agent-text-box h1 , .map-text-box h1{
+        font-size: 2.2rem;
+    }
+
+    /* report page */
+    #report .container {
+        padding-inline: 3rem;
+    }
+
+    #report .container h1 {
+        font-size: 2.5rem;
+    }
+}

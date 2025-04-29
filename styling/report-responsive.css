@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px){
+    #form-section {
+        padding: 175px 4rem;
+    }
+    
+    #form-section .container {
+        padding: 4rem;
+    }
+
+    #form-section .container .section-title {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    #form-section {
+        padding: 100px 2rem;
+    }
+    
+    #form-section .container {
+        padding: 3rem;
+        gap: 3rem;
+        border-radius: 0px 3rem;
+    }
+
+    #form-section .container .section-title {
+        font-size: 3rem;
+    }
+
+    .title {
+        padding-top: 0px;
+    }
+
+    #form-section .container .section-title {
+        padding: 0px;
+    }
+
+    .two-col {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        gap: 5rem;
+    }
+
+    form .white-button {
+        font-size: 1rem;
+    }
+}

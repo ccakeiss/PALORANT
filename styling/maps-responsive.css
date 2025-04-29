@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px){
+    
+#maps-identity {
+    padding: 175px 0px;
+    background-color: var(--white);
+}
+
+#maps-identity .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.maps-desc {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    bottom: 0;
+    text-align: justify;
+}
+
+.maps-desc h1{
+    position: relative;
+    font-size: 5rem;
+    padding-right: 24px;
+    color: var(--lighterblue);
+}
+
+.maps-desc h1::after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    background-color: var(--lighterblue);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.maps-desc p {
+    width: 100%;
+    font-family: 'dmsans-semibold';
+    color: var(--lighterblue);
+}
+
+.maps-detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 48px;
+    height: max-content;
+    gap: 1rem;
+    padding: 4rem;
+    background-color: var(--purple);
+    background: linear-gradient(45deg, var(--purple), var(--green30));
+}
+
+.maps-detail h1 {
+    width: 100%;
+    height: max-content;
+    order: -1;
+    font-size: 4rem;
+}
+
+.maps-detail::before {
+    content: '';
+    display: none;
+}
+
+.maps-detail img {
+    width: 100%;
+}
+
+/* MAPS PERSONAL PAGE (end) */
+}
+
+
+@media screen and (max-width: 428px){
+    #maps-section {
+        padding-block: 100px;
+    }
+
+    #maps-section .section-title {
+        padding-inline: 2rem;
+    }
+
+    .maps-grid {
+        margin-top: 0rem;
+    }
+
+    #maps-identity {
+        padding: 130px 0px 100px 0px;
+    }
+
+    #maps-identity .container {
+        padding-inline: 3rem;
+    }
+
+    .maps-box {
+        height: 188px;
+        border-radius: 1.5rem 0px;
+    }
+
+    .maps-box h1{
+        font-size: 2.5rem;
+    }
+
+    .maps-desc {
+        flex-direction: column;
+    }
+
+    .maps-desc h1{
+        padding: 0;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .maps-desc p {
+        text-align: center;
+    }
+
+    .maps-desc h1::after {
+        display: none;
+    }
+
+    .maps-detail {
+        padding: 3rem;
+    }
+
+    .maps-detail h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+}

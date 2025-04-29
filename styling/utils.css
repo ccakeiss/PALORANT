@@ -1,0 +1,357 @@
+:root{
+    --green: #15f5ba;
+    --green30: rgba(21, 245, 186, 0.5);
+    --greenTrans: rgba(21, 245, 186, 0);
+    --darkblueTrans: rgba(33, 25, 81, 0);
+    --darkblue: #211951;
+    --darkblue10: rgba(33, 25, 81, 0.1);
+    --lighterblue: rgb(65, 52, 144);
+    --white: #f0f3ff; 
+    --purple: #836fff;
+    --purple30: rgba(131, 111, 255, 0.3);
+    --white30: rgba(240, 243, 255, 0.3); 
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family: 'dmsans-reg';
+    font-size: 12px;
+    overflow-x: hidden;
+}
+
+video, img {
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'babapro';
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1020px;
+    width: 100%;
+    /* display: flex; */
+    margin: auto;
+    /* overflow-x: hidden; */
+    padding-inline: 4rem;
+}
+
+/* navigation bar (start) */
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-block: 1rem;
+    background-color: var(--darkblue);
+}
+
+nav .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+.navigation {
+    /* width: 100%; */
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    margin: auto;
+}
+
+.nav-list a{
+    text-decoration: none;
+    padding-inline: 1rem;
+    color: var(--white);
+}
+
+.nav-list li{
+    list-style: none;
+    transition: 0.3s;
+}
+
+.nav-list a li:hover {
+    color: var(--purple);
+}
+
+.hamburger {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+}
+
+/* navigation bar (end)*/
+
+.white-button {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    font-size: 1rem;
+    color: var(--darkblue);
+    font-family: 'dmsans-semibold';
+    transition: 0.3s;
+}
+
+.green-button {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--green);
+    font-size: 1rem;
+    color: var(--darkblue);
+    font-family: 'dmsans-semibold';
+    transition: 0.3s;
+}
+
+.purple-button {
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--purple);
+    font-size: 1rem;
+    color: var(--white);
+    font-family: 'dmsans-semibold';
+    transition: 0.3s;
+}
+
+.button-content {
+    display: flex;
+    align-content: center;
+    gap: 8px;
+}
+
+.white-button:hover , .green-button:hover{
+    background: linear-gradient(180deg, var(--purple) 0%, var(--darkblue) 100%);
+    color: var(--white);
+}
+
+.icon {
+    align-content: center;
+    width: 12px;
+    height: 12px;
+}
+
+.icon:hover {
+    color: var(--white);
+}
+
+.section-title {
+    width: 100%;
+    font-size: 4rem;
+    color: var(--darkblue);
+}
+
+/* footer (start) */
+footer {
+    background-color: var(--darkblue);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.logo-text-box {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lighterblue);
+    border-radius: 1.5rem;
+    gap: 2rem;
+}
+
+.logo-box {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.logo-box img {
+    width: fit-content;
+    object-fit: contain;
+    height: 30px;
+}
+
+.logo-box::after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--purple);
+    opacity: 0.7;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(90deg, var(--green) 0%, var(--purple) 100%);
+    height: 75px;
+    width: 100%;
+}
+
+.download h1 {
+    font-family: 'dmsans-bold';
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.download h1:hover {
+    padding: 5px 12px;
+    background-color: var(--darkblue10);
+    border-radius: 8px;
+}
+
+.footer-list-box {
+    width: 100%;
+    height: max-content;
+}
+
+.footer-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+.footer-list a li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    font-family: 'dmsans-semibold';
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.footer-list a li:hover{
+    background-color: var(--purple30);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.rate-social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    gap: 24px;
+}
+
+.game-rate {
+    display: flex;
+    height: 175px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    gap: 16px;
+    border-radius: 24px 0px;
+    background-color: var(--purple);
+    background: linear-gradient(45deg, var(--purple) 25%, var(--green) 100%);
+}
+
+.game-rate img{
+    width: fit-content;
+    height: 100%;
+    object-fit: contain;
+}
+
+.rate-list {
+    list-style: none;
+    font-size: 1rem;
+    color: var(--white);
+    font-family: 'dmsans-bold';
+}
+
+.social-media {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.icon-footer {
+    height: 24px;
+    color: var(--white);
+    border-radius: 100px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.icon-footer:hover {
+    color: var(--purple);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.text-footer {
+    position: relative;
+    width: 100%;
+    font-family: 'dmsans-semibold';
+    color: var(--white);
+    opacity: 0.7;
+    text-align: justify;
+    padding: 24px 0px;
+}
+
+/* footer (end) */
